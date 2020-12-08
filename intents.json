@@ -1,0 +1,64 @@
+{
+    "intents": [
+        {
+            "tag": "ola",
+            "patterns": [
+                "oi",
+                "ola",
+                "boas",
+                "esta alguem aqui",
+                "bom dia",
+                "boa tarde",
+                "boa noite"
+            ],
+            "responses": [
+                "Ola, seja bem vindo!",
+                "Ola, como posso ajuda-lo?",
+                "Ola, bom ve-lo de novo."
+            ]
+        },
+        {
+            "tag": "adeus",
+            "patterns": [
+                "adeus",
+                "vou sair",
+                "xau",
+                "ate amanha",
+                "ate logo"
+            ],
+            "responses": [
+                "Estarei aqui quando voltar.",
+                "Eu fico por aqui!",
+                "Voltaremos a ver-nos."
+            ]
+        },
+        {
+            "tag": "obrigado",
+            "patterns": [
+                "obrigado",
+                "muito obrigado",
+                "obrigado pela ajuda"
+            ],
+            "responses": [
+                "De nada!",
+                "O prazer e meu."
+            ]
+        },
+        {
+            "tag": "conta",
+            "patterns": [
+                "quero abrir uma conta",
+                "abre-me uma conta", "quero criar uma conta", "cria-me uma conta", "criar nova conta", "abrir conta"
+            ],
+            "responses": ["Que tipo de conta deseja abrir (corrente ou poupanca)?"]
+            },
+            {
+                "tag": "transfere",
+                "patterns": [
+                    "transfere 50 euros para o pedro", "envia 20 euros para a paula", "quero transferir 100 euros para o rui", "quero mandar 200 euros para a maria", "transfere 150 euros para o bruno", "transfere 120 euros para o rodrigo"],
+    "responses": [
+                        "Tem a certeza que deseja fazer isso?"
+                    ]
+                }
+            ]
+        }

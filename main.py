@@ -1,16 +1,25 @@
-from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
-from chatterbot.trainers import ListTrainer
-import os
+import nltk
+from nltk.stem.lancaster import LancasterStemmer
+stemmer = LancasterStemmer()
 
-bot = ChatBot('Teste')
-trainer = ListTrainer(bot) # definir o "treinador"
+import numpy
+import tflearn
+import tensorflow
+import random
+import json
 
-for arq in os.listdir('arq'): # procurar na pasta dos arquivos
-    chats = open('arq/' + arq, 'r').readlines() # ler os ficheiros
-    print(chats)
-    # trainer.train(chats) # treinar os ficheiros
-while True:
-    resq = input('Eu: ')
-    resp = bot.get_response(resq)
-    print(resp)
+with open("intents.json") as file:
+    data = json.load(file)
+
+words = []
+labels = []
+docs = []
+
+for intent in data["intents"]:
+    for pattern in intent["patterns"]:
+        wrds = nltk.word_tokenize(pattern)
+        words.extend(wrds)
+        docs.append(pattern)
+
+    if intent["tag"] not in labels:
+        labels.append(intent["tag"]) 

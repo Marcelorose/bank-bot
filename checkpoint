@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\Marcelo\\Documents\\bank-bot\\model.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\Marcelo\\Documents\\bank-bot\\model.tflearn"

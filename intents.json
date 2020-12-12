@@ -24,7 +24,8 @@
                 "vou sair",
                 "xau",
                 "ate amanha",
-                "ate logo"
+                "ate logo",
+                "abraço"
             ],
             "responses": [
                 "Estarei aqui quando voltar.",
@@ -48,17 +49,138 @@
             "tag": "conta",
             "patterns": [
                 "quero abrir uma conta",
-                "abre-me uma conta", "quero criar uma conta", "cria-me uma conta", "criar nova conta", "abrir conta"
+                "abre-me uma conta",
+                "quero criar uma conta",
+                "cria-me uma conta",
+                "criar nova conta",
+                "abrir conta"
             ],
-            "responses": ["Que tipo de conta deseja abrir (corrente ou poupanca)?"]
-            },
-            {
-                "tag": "transfere",
-                "patterns": [
-                    "transfere 50 euros para o pedro", "envia 20 euros para a paula", "quero transferir 100 euros para o rui", "quero mandar 200 euros para a maria", "transfere 150 euros para o bruno", "transfere 120 euros para o rodrigo"],
-    "responses": [
-                        "Tem a certeza que deseja fazer isso?"
-                    ]
-                }
+            "responses": [
+                "Que tipo de conta deseja abrir (corrente ou poupanca)?"
+            ]
+        },
+        {
+            "tag": "transfere",
+            "patterns": [
+                "transfere 50 reais para o pedro",
+                "envia 20 reais para a paula",
+                "quero transferir 100 reais para o roberto",
+                "quero mandar 200 reais para a maria",
+                "transfere 150 reais para o bruno",
+                "transfere 120 reais para o rodrigo",
+                "desejo transferir 80 reais para o felipe"
+            ],
+            "responses": [
+                "Tem a certeza que deseja transferir?"
+            ]
+        },
+        {
+            "tag": "saldo",
+            "patterns": [
+                "saldo",
+                "quanto possuo de saldo",
+                "consultar saldo",
+                "verificar o meu saldo"                
+            ],
+            "responses": [
+                "Voce possui 250 reais de saldo",
+                "Voce nao possui saldo",
+                "Voce possui 1000 reais de saldo"
+            ]
+        },
+        {
+            "tag": "cheque",
+            "patterns": [
+                "pedir cheques",
+                "como peço cheques?"                
+            ],
+            "responses": [
+                "Pode pedi-los agora mesmo. Basta preencher este formulario e esperar cerca de 5 dias uteis ate recebe-los em sua casa."
+            ]
+        },
+        {
+            "tag": "cancelar-cheque",
+            "patterns": [
+                "quero cancelar um cheque",
+                "cancelamento de cheque"                
+            ],
+            "responses": [
+                "Deseja realizar o cancelamento do cheque?"
+            ]
+        },
+        {
+            "tag": "outros",
+            "patterns": [
+                "desejo realizar pagamentos",
+                "pagamentos",
+                "quero fazer pagamentos",
+                "informações sobre a hipoteca da casa",
+                "hipoteca",
+                "emprestimo",
+                "desejo realizar um empréstimo",
+                "quero fazer um empréstimo"
+            ],
+            "responses": [
+                "Este servico pode ser realizado somente atraves de seu banco."
+            ]
+        },
+        {
+            "tag": "divida",
+            "patterns": [
+                "dívida",
+                "existe dívida",
+                "Possuo alguma dívida para pagar?"
+            ],
+            "responses": [
+                "Voce possui uma divida de 100 reais",
+                "Voce possui uma divida de 40 reais",
+                "Voce não possui dividas para pagar"
+            ]
+        },
+        {
+            "tag": "deposito",
+            "patterns": [
+                "Quero depositar algum dinheiro.",
+                "Desejo realizar um depósito"
+            ],
+            "responses": [
+                "Qual o valor do deposito?"
+            ]
+        },
+        {
+            "tag": "cancelamento",
+            "patterns": [
+                "desejo cancelar uma conta",
+                "cancelar conta"
+            ],
+            "responses": [
+                "Deseja realmente fazer o cancelamento?"
+            ]
+        },
+        {
+            "tag": "confirmacao",
+            "patterns": [
+                "sim",
+                "exato",
+                "claro",
+                "ok",
+                "certo",
+                "positivo"
+            ],
+            "responses": [
+                "Tudo bem."
+            ]
+        },
+        {
+            "tag": "negacao",
+            "patterns": [
+                "não",
+                "errado",
+                "negativo"
+            ],
+            "responses": [
+                "Cancelando..."
             ]
         }
+    ]
+}

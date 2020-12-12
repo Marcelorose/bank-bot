@@ -79,11 +79,11 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+# try:
+#     model.load("model.tflearn")
+# except:
+model.fit(training, output, n_epoch=200, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -100,10 +100,10 @@ def bag_of_words(s, words):
 
 
 def chat():
-    print("Start talking with the bot (type quit to stop)!")
+    print("\nSou um bot construído para realizar serviços bancários (abrir uma conta, consultar o saldo, realizar transferências). Como posso ajudar?.\n(Escreva 'sair' para terminar)")
     while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
+        inp = input("\nYou: ")
+        if inp.lower() == "sair":
             break
 
         results = model.predict([bag_of_words(inp, words)])[0]
@@ -115,8 +115,8 @@ def chat():
                 if tg["tag"] == tag:
                     responses = tg["responses"]
 
-            print(random.choice(responses))
+            print("Bot: " + random.choice(responses))
         else:
-            print("I didn't get that, try again.")
+            print("Desculpe, não entendi.")
 
 chat()

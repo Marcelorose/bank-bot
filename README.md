@@ -1,8 +1,10 @@
 # bank-bot
 
-Python 3.8.0
+<b> Python 3.8.0 </b>
 
-<p> pip install nltk </p>
-<p> pip install numpy </p>
-<p> pip install tflearn </p>
-<p> pip install tensorflow </p>
+<b> Bibliotecas </b>
+
++ pip install nltk
++ pip install numpy
++ pip install tflearn
++ pip install tensorflow

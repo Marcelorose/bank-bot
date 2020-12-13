@@ -62,6 +62,7 @@
         {
             "tag": "transfere",
             "patterns": [
+                "realizar transferencia",
                 "transfere 50 reais para o pedro",
                 "envia 20 reais para a paula",
                 "quero transferir 100 reais para o roberto",
